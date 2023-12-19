@@ -1,0 +1,15 @@
+.sidebar {
+    background-color: #1e1f29;
+    color: white;
+    height: 100vh;
+    padding: 1rem;
+    max-width: 15vw;
+    border-right: 1px solid var(--main-color);
+
+    .list-item {
+        margin: 1rem 0;
+    }
+    h4 {
+        margin-bottom: 30px;
+    }
+}

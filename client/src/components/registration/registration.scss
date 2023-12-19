@@ -1,0 +1,67 @@
+@import '../../styles/abstract/mixins';
+
+.signup-form, .signin-form {
+    width: 100%;
+    height: 100vh;
+    @include flex-center(flex, row, center, center);
+    background-color: #282a36;
+    
+
+
+    &__wrapper {
+        width: 50%;
+        height: 400px;
+        @include flex-center(flex, column, center, center);
+
+        .form {
+            width: 100%;
+            height: 100%;
+            background-color: #282a36;
+            padding: 10px;
+            @include flex-center(flex, column, center, center);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 10px;
+
+            .form-group {
+                margin-bottom: 1rem;
+                width: 50%;
+                text-align: center;
+
+                input {
+                    width: 100%;
+                    padding: 1rem;
+                    outline: none;
+                    font-family: 'Fira Code', monospace;
+                    border: 1px solid #50fa7b;
+                    background-color: #282a36; 
+                    color: white;
+                }
+                input:focus {
+                    outline: none;
+                    box-shadow: 0 0 5px rgba(248, 248, 242, 0.5);
+                }
+
+                button {
+                    padding: 1rem;
+                    outline: none;
+                    border: none;
+                    margin-top: 30px;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    &.signup-form {
+        h1 {
+            color: white;
+            margin-bottom: 20px;
+        }
+    }
+
+    &.signin-form {
+        h1 {
+            color: white;
+            margin-bottom: 40px;
+        }
+    }
+}

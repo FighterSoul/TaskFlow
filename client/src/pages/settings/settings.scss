@@ -1,0 +1,20 @@
+.dashboard__rightContent {
+    margin: 20px;
+  
+    h2, h3 {
+      margin-bottom: 20px;
+    }
+  
+    .themeButtons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; // Distribute buttons evenly with space around them
+      margin-top: 20px;
+  
+      .button {
+        width: 50px; // Set the width of the buttons to 50px
+        margin: 100px; // Add margin around each button
+        font-size: 1rem;
+      }
+    }
+  }
